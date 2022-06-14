@@ -56,7 +56,7 @@ async function main() {
       })
       fs.writeFileSync("./results.json", JSON.stringify(results, null, 2))
       console.log(
-        `Continue crawling. Send request to https://localhost:${port}/abort to abort.`
+        `${results.length} posts - Continue crawling. Send request to https://localhost:${port}/abort to abort.`
       )
     }
   })
